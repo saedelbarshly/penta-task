@@ -2,10 +2,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Queries\JobController;
-use App\Http\Controllers\Queries\TaskController;
-use App\Http\Controllers\Queries\AccountController;
-use App\Http\Controllers\Queries\ProjectController;
+use App\Http\Controllers\Api\Queries\JobController;
+use App\Http\Controllers\Api\Queries\TaskController;
+use App\Http\Controllers\Api\Queries\AccountController;
+use App\Http\Controllers\Api\Queries\ProjectController;
 use App\Http\Controllers\Api\Hierarchical\CategoryController;
 
 // Route::get('/user', function (Request $request) {

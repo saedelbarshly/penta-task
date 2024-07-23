@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Queries;
+namespace App\Http\Controllers\Api\Queries;
 
 use Illuminate\Http\Request;
 use App\Models\Queries\Account;

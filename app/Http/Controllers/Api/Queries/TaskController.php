@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Queries;
+namespace App\Http\Controllers\Api\Queries;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Queries\TaskRequest;
