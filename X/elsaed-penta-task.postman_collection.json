@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "46e701ad-8534-4752-b7ef-a1bac3ce1704",
+		"name": "elsaed-penta-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12496206"
+	},
+	"item": [
+		{
+			"name": "Hierarchical",
+			"item": [
+				{
+					"name": "all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/categories"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Queries",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/api/accounts"
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Account 3",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/accounts"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Project",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/api/projects"
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Project 3",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "100.00",
+											"type": "text"
+										},
+										{
+											"key": "account_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/projects"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Job",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/api/jobs"
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "task 3",
+											"type": "text"
+										},
+										{
+											"key": "amount",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "project_id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/jobs"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Task",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/api/tasks"
+							},
+							"response": []
+						},
+						{
+							"name": "store",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "task 3",
+											"type": "text"
+										},
+										{
+											"key": "job_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/tasks"
+							},
+							"response": []
+						},
+						{
+							"name": "getTasksByProjectPrice",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/api/tasks/project-price-less-than/100"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "twitter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer AAAAAAAAAAAAAAAAAAAAAADjuwEAAAAAYvPFXZhi%2F0G%2Bhi%2FLspiuSaNlpvY%3DEKP4MRRnnF0Vxcg2YnFzHG3QcYDmZDqMKV2qtFqDplGFTRWjBx",
+						"type": "text"
+					}
+				],
+				"url": "https://api.twitter.com/2/tweets/search/recent"
+			},
+			"response": []
+		}
+	]
+}

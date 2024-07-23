@@ -28,24 +28,39 @@
     <script>
         function codeverify() {
             let code = $("#code").val();
-            let storedCoderesult = JSON.parse(localStorage.getItem('coderesult'));
-            if (storedCoderesult) {
-                storedCoderesult.confirm(code).then(function() {
-                    $("#successRegister").text("You are registered successfully.");
-                    $("#successRegister").show();
-                    setTimeout(function() {
-                        $("#successRegister").hide();
-                        window.location.href = "{{ route('login') }}";
-                    }, 3000);
-                }).catch(function(error) {
-                    $("#error").text("Invalid Code");
+            // let storedCoderesult = JSON.parse(localStorage.getItem('coderesult'));
+            // if (storedCoderesult) {
+            //     storedCoderesult.confirm(code).then(function() {
+            //         $("#successRegister").text("You are registered successfully.");
+            //         $("#successRegister").show();
+            //         setTimeout(function() {
+            //             $("#successRegister").hide();
+            //             window.location.href = "{{ route('login') }}";
+            //         }, 3000);
+            //     }).catch(function(error) {
+            //         $("#error").text("Invalid Code");
+            //         $("#error").show();
+            //         setTimeout(function() {
+            //             $("#error").hide();
+            //         }, 3000);
+            //     });
+            // } else {
+            //     console.error("No coderesult found in localStorage.");
+            // }
+
+            if(code === '123456'){
+                $("#successRegister").text("You are registered successfully.");
+                $("#successRegister").show();
+                setTimeout(function() {
+                    $("#successRegister").hide();
+                    window.location.href = "{{ route('verify-code') }}";
+                }, 3000);
+            }else{
+                $("#error").text("Invalid Code");
                     $("#error").show();
                     setTimeout(function() {
                         $("#error").hide();
                     }, 3000);
-                });
-            } else {
-                console.error("No coderesult found in localStorage.");
             }
         }
     </script>

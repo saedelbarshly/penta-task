@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('verify-phone',[FirebaseController::class, 'verifyPhone'])->name('verify-phone');
+Route::get('verify-code',[FirebaseController::class, 'verifyCode'])->name('verify-code');
 Route::get('firebase-phone-authentication', [FirebaseController::class, 'index'])->name('firebase-phone-authentication');
 
 Route::controller(ImageController::class)->group(function(){
