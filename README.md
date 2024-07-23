@@ -11,7 +11,7 @@ During the four tasks, if I were to count each task from 25 degree, the results 
   
 So Total will be 70/100
 
-Note : There will be a folder containing pictures of the results and problems and a copy of DataBase and Api collection.
+Note : There will be a folder name X containing pictures of the results and problems and a copy of DataBase and Api collection.
 ## Let's take about every task
 
 ### Twitter
@@ -35,7 +35,6 @@ I think this will be the subject of my next article
 - phone : 01224845766
 - password : 123456789
 - all configration in .env.example
-- 
 ## End
 
 I am pleased to deal with you. I hope to hear your evaluation. Goog Luck for me 😉
