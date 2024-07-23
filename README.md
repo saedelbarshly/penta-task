@@ -8,6 +8,7 @@ During the four tasks, if I were to count each task from 25 degree, the results 
 - Frontend Task 20/25.
 - Hierarchical Task 25/25.
 - Queries Task  25/25.
+  
 So Total will be 70/100
 
 Note : There will be a folder containing pictures of the results and problems and a copy of DataBase and Api collection.
