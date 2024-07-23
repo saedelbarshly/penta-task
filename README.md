@@ -27,7 +27,6 @@ I think this will be the subject of my next article
 - Here I encountered a problem that I cannot grasp the code that is being sent to compare it with the code that the user will enter. I created a fixed code in order to complete the process.
 - otp code 123456
 - for upload image after login for dashboard you find it and try it
-- 
 ### Hierarchical & Queries
 - There are pictures of the results for these two tasks, and also try the collection
 
