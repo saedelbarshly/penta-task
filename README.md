@@ -8,16 +8,9 @@ During the four tasks, if I were to count each task from 25 degree, the results 
 - Frontend Task 20/25.
 - Hierarchical Task 25/25.
 - Queries Task  25/25.
+So Total will be 70/100
 
 Note : There will be a folder containing pictures of the results and problems and a copy of DataBase and Api collection.
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
 ## Let's take about every task
 
 ### Twitter
