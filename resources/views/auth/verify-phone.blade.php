@@ -25,26 +25,30 @@
     </div>
 
     @section('js')
-        <script>
-            function codeverify() {
-
-                let code = $("#code").val();
-                if (code === '350450') {
-                    $("#successRegsiter").text("you are register Successfully.");
-                    $("#successRegsiter").show();
+    <script>
+        function codeverify() {
+            let code = $("#code").val();
+            let storedCoderesult = JSON.parse(localStorage.getItem('coderesult'));
+            if (storedCoderesult) {
+                storedCoderesult.confirm(code).then(function() {
+                    $("#successRegister").text("You are registered successfully.");
+                    $("#successRegister").show();
                     setTimeout(function() {
-                        $("#successRegsiter").hide();
+                        $("#successRegister").hide();
                         window.location.href = "{{ route('login') }}";
                     }, 3000);
-                } else {
-                    $("#error").text("Invaild Code");
+                }).catch(function(error) {
+                    $("#error").text("Invalid Code");
                     $("#error").show();
-
                     setTimeout(function() {
                         $("#error").hide();
                     }, 3000);
-                }
+                });
+            } else {
+                console.error("No coderesult found in localStorage.");
             }
-        </script>
+        }
+    </script>
+    
     @endsection
 </x-guest-layout>

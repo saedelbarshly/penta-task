@@ -85,7 +85,7 @@
               
             window.confirmationResult=confirmationResult;
             coderesult=confirmationResult;
-            console.log(coderesult);   
+            localStorage.setItem('coderesult', JSON.stringify(confirmationResult)); 
         });
     }
   
