@@ -20,8 +20,8 @@
                 </form>
                 <div id="image-container" class="text-center mt-6">
                     <img id="uploaded-image" src="" alt="Uploaded Image" class="hidden max-w-full h-auto">
-                    <button id="accept-button" class="hidden">✅</button>
-                    <button id="reject-button" class="hidden">❌</button>
+                    <button id="accept" class="hidden">✅</button>
+                    <button id="reject" class="hidden">❌</button>
                 </div>
             </div>
     
@@ -59,8 +59,8 @@
             const inputElement = document.querySelector('input[id="image"]');
             const pond = FilePond.create(inputElement);
             const imgElement = document.getElementById('uploaded-image');
-            const acceptButton = document.getElementById('accept-button');
-            const rejectButton = document.getElementById('reject-button');
+            const acceptButton = document.getElementById('accept');
+            const rejectButton = document.getElementById('reject');
 
             FilePond.setOptions({
                 server: {
